@@ -4,4 +4,4 @@ This example is the application created in the [Getting Started](https://docs.de
 
 ![](/images/dxgridgetstarted.png)
 
-This project is based on the following example: [https://github.com/DevExpress-Examples/wpf-blank-app-with-database](https://github.com/DevExpress-Examples/wpf-blank-app-with-database).
+This project is based on the following example: [https://github.com/DevExpress-Examples/wpf-blank-app-with-the-northwind-database](https://github.com/DevExpress-Examples/wpf-blank-app-with-the-northwind-database).
