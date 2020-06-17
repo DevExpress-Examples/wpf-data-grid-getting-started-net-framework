@@ -10,7 +10,7 @@ Imports System
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-Namespace DXGridGetStarted
+Namespace WPFDataGridGettingStartedNETFramework
 
 	Partial Public Class Order_Detail
 		Public Property OrderID() As Integer

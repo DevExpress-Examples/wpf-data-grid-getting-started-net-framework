@@ -10,7 +10,7 @@ Imports System
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-Namespace DXGridGetStarted
+Namespace WPFDataGridGettingStartedNETFramework
 
 	Partial Public Class Employee
 		<System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")>

@@ -3,10 +3,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
-    xmlns:local="clr-namespace:DXGridGetStarted" 
+    xmlns:local="clr-namespace:WPFDataGridGettingStartedNETFramework" 
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
-    x:Class="DXGridGetStarted.MainWindow"
+    x:Class="WPFDataGridGettingStartedNETFramework.MainWindow"
     Title="MainWindow" Height="450" Width="800">
     <dx:ThemedWindow.DataContext>
         <local:ViewModel/>

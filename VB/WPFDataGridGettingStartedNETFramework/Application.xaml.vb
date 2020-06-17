@@ -5,7 +5,7 @@ Imports System.Data
 Imports System.Linq
 Imports System.Windows
 
-Namespace DXGridGetStarted
+Namespace WPFDataGridGettingStartedNETFramework
 	''' <summary>
 	''' Interaction logic for App.xaml
 	''' </summary>

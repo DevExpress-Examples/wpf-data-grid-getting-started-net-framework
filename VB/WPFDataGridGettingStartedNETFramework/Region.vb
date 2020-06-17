@@ -10,28 +10,18 @@ Imports System
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-Namespace DXGridGetStarted
+Namespace WPFDataGridGettingStartedNETFramework
 
-	Partial Public Class Product
+	Partial Public Class Region
 		<System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")>
 		Public Sub New()
-			Me.Order_Details = New HashSet(Of Order_Detail)()
+			Me.Territories = New HashSet(Of Territory)()
 		End Sub
 
-		Public Property ProductID() As Integer
-		Public Property ProductName() As String
-		Public Property SupplierID() As Integer?
-		Public Property CategoryID() As Integer?
-		Public Property QuantityPerUnit() As String
-		Public Property UnitPrice() As Decimal?
-		Public Property UnitsInStock() As Short?
-		Public Property UnitsOnOrder() As Short?
-		Public Property ReorderLevel() As Short?
-		Public Property Discontinued() As Boolean
+		Public Property RegionID() As Integer
+		Public Property RegionDescription() As String
 
-		Public Overridable Property Category() As Category
 		<System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")>
-		Public Overridable Property Order_Details() As ICollection(Of Order_Detail)
-		Public Overridable Property Supplier() As Supplier
+		Public Overridable Property Territories() As ICollection(Of Territory)
 	End Class
 End Namespace

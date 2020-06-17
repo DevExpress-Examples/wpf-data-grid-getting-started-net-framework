@@ -11,7 +11,7 @@ Imports System
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-Namespace DXGridGetStarted
+Namespace WPFDataGridGettingStartedNETFramework
 
 	Partial Public Class NorthwindEntities
 		Inherits DbContext

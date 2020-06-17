@@ -6,11 +6,11 @@ Imports System.Windows
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("DXGridGetStarted")>
+<Assembly: AssemblyTitle("WPFDataGridGettingStartedNETFramework")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("DXGridGetStarted")>
+<Assembly: AssemblyProduct("WPFDataGridGettingStartedNETFramework")>
 <Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
