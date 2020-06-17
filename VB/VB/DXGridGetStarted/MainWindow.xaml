@@ -1,0 +1,50 @@
+<dx:ThemedWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+    xmlns:local="clr-namespace:DXGridGetStarted" 
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    x:Class="DXGridGetStarted.MainWindow"
+    Title="MainWindow" Height="450" Width="800">
+    <dx:ThemedWindow.DataContext>
+        <local:ViewModel/>
+    </dx:ThemedWindow.DataContext>
+    <dxg:GridControl ItemsSource="{Binding Orders}" FilterString="[OrderDate] > #2020-01-01# And [Freight] > 100">
+        <dxg:GridControl.GroupSummary>
+            <dxg:GridSummaryItem FieldName="Freight" SummaryType="Sum" 
+                                 DisplayFormat="Sum of Freight is {0:c}"/>
+        </dxg:GridControl.GroupSummary>
+        <dxg:GridControl.TotalSummary>
+            <dxg:GridSummaryItem Alignment="Left" FieldName="OrderID" SummaryType="Count"/>
+        </dxg:GridControl.TotalSummary>
+        <dxg:GridControl.View>
+            <dxg:TableView AutoWidth="True" 
+                           BestFitModeOnSourceChange="VisibleRows" 
+                           ShowFixedTotalSummary="True" 
+                           ShowUpdateRowButtons="OnCellEditorOpen">
+                <dxmvvm:Interaction.Behaviors>
+                    <dxmvvm:EventToCommand EventName="ValidateRow"
+                                           Command="{Binding Path=ValidateAndSaveCommand}"/>
+                </dxmvvm:Interaction.Behaviors>
+            </dxg:TableView>
+        </dxg:GridControl.View>
+        <dxg:GridColumn FieldName="OrderID" IsSmart="True"/>
+        <dxg:GridColumn FieldName="CustomerID" IsSmart="True" SortIndex="0" SortOrder="Ascending"/>
+        <dxg:GridColumn FieldName="OrderDate" IsSmart="True" SortIndex="1" SortOrder="Descending"/>
+        <dxg:GridColumn FieldName="ShipVia" IsSmart="True">
+            <dxg:GridColumn.EditSettings>
+                <dxe:ComboBoxEditSettings ItemsSource="{Binding Shippers}" DisplayMember="CompanyName" ValueMember="ShipperID"/>
+            </dxg:GridColumn.EditSettings>
+        </dxg:GridColumn>
+        <dxg:GridColumn FieldName="Freight" IsSmart="True">
+            <dxg:GridColumn.EditSettings>
+                <dxe:TextEditSettings Mask="c" MaskType="Numeric" MaskUseAsDisplayFormat="True"/>
+            </dxg:GridColumn.EditSettings>
+        </dxg:GridColumn>
+        <dxg:GridColumn FieldName="ShipName" IsSmart="True"/>
+        <dxg:GridColumn FieldName="ShipCity" IsSmart="True" GroupIndex="1"/>
+        <dxg:GridColumn FieldName="ShipCountry" IsSmart="True" GroupIndex="0"/>
+    </dxg:GridControl>
+</dx:ThemedWindow>
