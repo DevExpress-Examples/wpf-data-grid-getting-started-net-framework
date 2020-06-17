@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataGridGettingStartedNETFramework", "WPFDataGridGettingStartedNETFramework\WPFDataGridGettingStartedNETFramework.csproj", "{B16F0B23-96B8-4621-8CF6-02C1C4063DF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B16F0B23-96B8-4621-8CF6-02C1C4063DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16F0B23-96B8-4621-8CF6-02C1C4063DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16F0B23-96B8-4621-8CF6-02C1C4063DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16F0B23-96B8-4621-8CF6-02C1C4063DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64FF6B5E-6420-40C5-8F5A-440128960D15}
+	EndGlobalSection
+EndGlobal
