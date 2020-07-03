@@ -22,8 +22,22 @@ Namespace WPFDataGridGettingStartedNETFramework
 			End If
 			ValidateAndSaveCommand = New DelegateCommand(AddressOf ValidateAndSave)
 		End Sub
-		Public ReadOnly Property Orders() As ObservableCollection(Of Order)
-		Public ReadOnly Property Shippers() As ObservableCollection(Of Shipper)
+		Public Property Orders() As ObservableCollection(Of Order)
+			Get
+				Return GetValue(Of ObservableCollection(Of Order))()
+			End Get
+			Private Set(ByVal value As ObservableCollection(Of Order))
+				SetValue(value)
+			End Set
+		End Property
+		Public Property Shippers() As ObservableCollection(Of Shipper)
+			Get
+				Return GetValue(Of ObservableCollection(Of Shipper))()
+			End Get
+			Private Set(ByVal value As ObservableCollection(Of Shipper))
+				SetValue(value)
+			End Set
+		End Property
 		Public ReadOnly Property ValidateAndSaveCommand() As DelegateCommand
 		Private Sub ValidateAndSave()
 			northwindDBContext.SaveChanges()
