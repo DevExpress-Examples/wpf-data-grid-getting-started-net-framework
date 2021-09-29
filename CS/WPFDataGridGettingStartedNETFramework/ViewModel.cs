@@ -20,11 +20,16 @@ namespace WPFDataGridGettingStartedNETFramework {
         public ViewModel() {
             northwindDBContext = new NorthwindEntities();
 
-            northwindDBContext.Orders.Load();
-            Orders = northwindDBContext.Orders.Local;
+            if(IsInDesignMode) {
+                Orders = new ObservableCollection<Order>();
+                Shippers = new ObservableCollection<Shipper>();
+            } else {
+                northwindDBContext.Orders.Load();
+                Orders = northwindDBContext.Orders.Local;
 
-            northwindDBContext.Shippers.Load();
-            Shippers = northwindDBContext.Shippers.Local;
+                northwindDBContext.Shippers.Load();
+                Shippers = northwindDBContext.Shippers.Local;
+            }
         }
 
         [Command]
