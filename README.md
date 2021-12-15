@@ -11,6 +11,8 @@ This example is the application created in the [Getting Started](https://docs.de
 
 This project is based on the following example: [https://github.com/DevExpress-Examples/wpf-blank-app-with-the-northwind-database](https://github.com/DevExpress-Examples/wpf-blank-app-with-the-northwind-database).
 
+**See also**: [WPF Data Grid - Getting Started (.NET Core)](https://github.com/DevExpress-Examples/wpf-data-grid-getting-started-net-core)
+
 ## More Examples
 
 The following example shows how to bind the WPF Data Grid to different data sources: [Bind the WPF Data Grid to Data](https://github.com/DevExpress-Examples/how-to-bind-wpf-grid-to-data).
